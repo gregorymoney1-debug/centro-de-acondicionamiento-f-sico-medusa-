@@ -1380,3 +1380,39 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
     object-fit: cover;
     display: block;
 }
+/* ==== FIX DE TIPOGRAFÍA QUE DESAJUSTABA EL DISEÑO ==== */
+
+/* Normaliza el line-height de todos los elementos */
+body, p, a, li, span {
+    line-height: 1.4 !important;
+}
+
+/* Evita que los H1-H6 cambien tamaño según la fuente aplicada */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1 !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+/* Ajuste específico del slider tipográfico */
+#home .v2 .typographic h1,
+#home .v2 .typographic h2 {
+    font-size: 48px !important;
+    line-height: 1 !important;
+}
+
+/* Ajuste para que el menú no cambie de altura */
+#navigation .nav li a {
+    line-height: 55px !important;
+    font-size: 16px !important;
+}
+
+/* Ajuste para que el header no crezca con una tipografía más alta */
+.header {
+    line-height: 1 !important;
+}
+
+/* Corrige desplazamientos por fuentes cursivas o serif */
+.condensed, .fancy, h1, h2, h3 {
+    letter-spacing: 0.5px !important;
+}
