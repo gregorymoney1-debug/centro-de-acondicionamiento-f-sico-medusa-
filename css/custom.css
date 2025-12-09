@@ -1,74 +1,88 @@
-/* --- Corrección general para Montserrat --- */
+/* -------------------------------------------
+   TIPOGRAFÍA GENERAL — POPPINS ELEGANTE
+---------------------------------------------*/
 
-/* Aplica tipografía de manera uniforme */
 body, button, input, select, textarea {
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+    font-weight: 400 !important;
 }
 
-/* Ajusta altura de línea global para evitar que los textos empujen contenedores */
-body {
-    line-height: 1.4 !important;
+/* -------------------------------------------
+   TITULOS — más elegantes y compactos
+---------------------------------------------*/
+
+h1 {
+    font-size: 32px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
 }
 
-/* --- HEADER & MENU --- */
+h2 {
+    font-size: 26px !important;
+    font-weight: 600 !important;
+    line-height: 1.25 !important;
+}
 
-/* Menú más compacto (Montserrat es más alta) */
+h3 {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+}
+
+/* -------------------------------------------
+   MENÚ / HEADER — corregido para evitar saltos
+---------------------------------------------*/
+
 .navbar-nav > li > a {
+    font-size: 14px !important;
     padding-top: 10px !important;
     padding-bottom: 10px !important;
-    font-size: 15px !important;
+    letter-spacing: 0.3px !important;
 }
 
-/* Ajusta altura del header fijo */
-.navbar-default {
-    padding: 5px 0 !important;
-}
-
-/* Evita que el logo empuje el menú */
 .navbar-brand img {
     max-height: 55px !important;
 }
 
-/* --- TITULOS GENERALES --- */
-
-h1, h2, h3, h4 {
-    line-height: 1.2 !important;
-    margin-bottom: 15px !important;
+/* Evita que el header se agrande por tipografía */
+.navbar-default {
+    padding: 5px 0 !important;
 }
 
-/* --- SECCIONES QUE SE DESCUADRAN POR TEXTO MÁS GRANDE --- */
+/* -------------------------------------------
+   BOTONES — más estilizados y no tan grandes
+---------------------------------------------*/
+
+.btn,
+button,
+input[type="submit"] {
+    font-size: 14px !important;
+    padding: 10px 22px !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* -------------------------------------------
+   CAJAS / SECCIONES — neutralizar aumentos de altura
+---------------------------------------------*/
 
 .section {
     padding-top: 60px !important;
     padding-bottom: 60px !important;
 }
 
-/* --- CORRECCIÓN PARA SLIDERS --- */
-
+/* Texto interior de sliders */
 .owl-carousel .item h2,
 .owl-carousel .item h3,
 .owl-carousel .item p {
-    line-height: 1.2 !important;
+    line-height: 1.25 !important;
 }
 
-/* --- BOTONES --- */
-
-.btn,
-button,
-input[type="submit"] {
-    padding: 10px 25px !important;
-    letter-spacing: 0.5px !important;
-}
-
-/* --- TABLAS, LISTAS Y CAJAS DE PRECIO --- */
-
-.pricing-box {
-    line-height: 1.3 !important;
-    padding: 25px !important;
-}
-
-/* --- FOOTER --- */
+/* -------------------------------------------
+   FOOTER
+---------------------------------------------*/
 
 footer {
-    line-height: 1.3 !important;
+    font-size: 13px !important;
+    line-height: 1.4 !important;
 }
